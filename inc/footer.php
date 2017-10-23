@@ -1,5 +1,3 @@
-<!-- jQuery -->
-<script src="<?php echo js_url;?>/jquery.min.js"></script>
 <!-- jQuery Easing -->
 <script src="<?php echo js_url;?>/jquery.easing.1.3.js"></script>
 <!-- Bootstrap -->

@@ -1,6 +1,9 @@
 <div id="fh5co-main">
-
-  <div class="fh5co-narrow-content">
+  <div class="fh5co-narrow-content animate-box" data-animate-effect="fadeInLeft">
+    <left>
+      <a href="gallery.php" title="Go back to the images gallery page">
+      <i class="fa fa-fw fa-home fa-lg"></i> Image Gallery</a>
+    </left>
     <div class="row">
 
       <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">

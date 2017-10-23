@@ -1,33 +1,41 @@
 <div id="fh5co-main">
-
-  <div class="fh5co-narrow-content">
+  <?php if(isset($_GET) & !empty($_GET['id'])){
+    $id = sanitize($_GET['id']);
+  } ?>
+<?php $getVideo = getVideo($id); //debugger($getVideo);?>
+  <div class="fh5co-narrow-content animate-box" data-animate-effect="fadeInLeft">
+    <left>
+      <a href="gallery.php" title="Go back to the video gallery page">
+      <i class="fa fa-fw fa-home fa-lg"></i> Video Gallery</a>
+    </left>
     <div class="row">
-
-      <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-        <figure class="text-center">
-        <iframe width="75%" height="500px" src="https://www.youtube.com/embed/J_ub7Etch2U?rel=0" frameborder="0" allowfullscreen></iframe>
-        </figure>
-      </div>
-
-      <div class="col-md-8 col-md-offset-2 animate-box" data-animate-effect="fadeInLeft">
-
-        <div class="col-md-9 col-md-push-3">
-          <h1>Too good at goodbye</h1>
-          <p>Description of the video if should be mentioned</p>
-
-
+        <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+          <figure class="text-center">
+          <iframe src="https://www.youtube.com/embed/<?php echo $getVideo['videoId'] ?>?rel=0" frameborder="0" allowfullscreen></iframe>
+          </figure>
         </div>
 
-        <div class="col-md-3 col-md-pull-9 fh5co-services">
-          <h3>Information</h3>
-          <ul>
-            <li>Date of Upload</li>
-            <li>Time</li>
-          </ul>
-        </div>
+        <div class="col-md-8 col-md-offset-2 animate-box" data-animate-effect="fadeInLeft">
 
+          <div class="col-md-9 col-md-push-3">
+            <h1><?php echo $getVideo['title']; ?></h1>
+            <?php if(isset($getVideo['description']) && !empty($getVideo['description'])) {
+              ?>
+
+            <p><?php echo html_entity_decode($getVideo['description']); ?></p>
+            <?php
+          } ?>
+          </div>
+
+          <div class="col-md-3 col-md-pull-9 fh5co-services">
+            <h3>Information</h3>
+            <ul>
+              <li><?php echo $getVideo['added_date']; ?></li>
+            </ul>
+          </div>
+
+        </div>
       </div>
-    </div>
 
     <div class="row work-pagination animate-box" data-animate-effect="fadeInLeft">
       <div class="col-md-8 col-md-offset-2 col-sm-12 col-sm-offset-0">
