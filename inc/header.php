@@ -38,7 +38,6 @@
 	<!-- Theme style  -->
 	<link rel="stylesheet" href="<?php echo css_url;?>/style.css">
 	<link rel="stylesheet" href="<?php echo css_url; ?>/seedsGroup.css">
-
 	<!-- Fontawesome -->
 	<link rel="stylesheet" href="<?php echo fontawesome_url; ?>/css/font-awesome.min.css">
 	<!-- Modernizr JS -->

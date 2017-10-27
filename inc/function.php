@@ -21,7 +21,7 @@
 
 	function getLink(){
 		global $conn;
-		$sql = "SELECT * from youtube ORDER BY id desc";
+		$sql = "SELECT * from youtube Where id != '' ORDER BY id desc ";
 		$query = mysqli_query($conn, $sql);
 		if(mysqli_num_rows($query) <= 0){
 			return 0;
@@ -46,5 +46,17 @@
 		}
 	}
 
-
+	function getRelatedVideos($id){
+		global $conn;
+		$sql = "SELECT * from youtube WHERE id != '$id' and id != ''";
+		$query = mysqli_query($conn, $sql);
+		if(mysqli_num_rows($query) <= 0){
+			return 0;
+		}else{
+			$data = array();
+			while($rows = mysqli_fetch_assoc($query)){
+				$data[] = $rows; //for single value
+			}return $data;
+		}
+	}
 	?>

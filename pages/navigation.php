@@ -10,9 +10,9 @@
       <li class="<?php echo ($current_page_active == "index.php") ? 'fh5co-active' : ''; ?>"><a href="index.php"><i class="fa fa-home fa-lg" aria-hidden="true" style="color:<?php echo ($current_page_active == "index.php") ? 'red' : ''; ?>;" ></i> Home</a></li>
       <li class="<?php echo ($current_page_active == "whatWeDo.php") ? 'fh5co-active' : ''; ?>"><a href="whatWeDo.php"><i class="fa fa-files-o fa-lg" aria-hidden="true" style="color:<?php echo ($current_page_active == "whatWeDo.php") ? 'red' : ''; ?>;"></i> What we do</a></li>
       <li class="<?php echo ($current_page_active == "whereWeWork.php") ? 'fh5co-active' : ''; ?>"><a href="whereWeWork.php"><i class="fa fa-briefcase fa-lg" aria-hidden="true" style="color:<?php echo ($current_page_active == "whereWeWork.php") ? 'red' : ''; ?>;"></i> Projects</a></li>
-      <li class="<?php echo ($current_page_active == "whoWeAre.php") ? 'fh5co-active' : ''; ?>"><a href="whoWeAre.php"><i class="fa fa-question-circle-o fa-lg" aria-hidden="true" style="color:<?php echo ($current_page_active == "whoWeAre.php") ? 'red' : ''; ?>;"></i> Events</a></li>
+      <li class="<?php echo ($current_page_active == "event.php") ? 'fh5co-active' : ''; ?>"><a href="event.php"><i class="fa fa-question-circle-o fa-lg" aria-hidden="true" style="color:<?php echo ($current_page_active == "event.php") ? 'red' : ''; ?>;"></i> Events</a></li>
       <li class="<?php echo ($current_page_active == "gallery.php") ? 'fh5co-active' : ''; ?>"><a href="gallery.php"><i class="fa fa-picture-o fa-lg" aria-hidden="true" style="color:<?php echo ($current_page_active == "gallery.php") ? 'red' : ''; ?>;"></i> Gallery</a></li>
-      <!-- <li><a href="about.php"><i class="fa fa-question-circle-o fa-lg" aria-hidden="true" style=""></i> About</a></li> -->
+      <li class="<?php echo ($current_page_active == "video.php") ? 'fh5co-active' : ''; ?>"><a href="video.php"><i class="fa fa-youtube fa-lg" aria-hidden="true" style="color:<?php echo ($current_page_active == "video.php") ? 'red' : ''; ?>;"></i> Videos</a></li>
       <li class="<?php echo ($current_page_active == "contact.php") ? 'fh5co-active' : ''; ?>"><a href="contact.php"><i class="fa fa-envelope-open fa-lg" aria-hidden="true" style="color:<?php echo ($current_page_active == "contact.php") ? 'red' : ''; ?>;"></i> Contact</a></li>
     </ul>
   </nav>

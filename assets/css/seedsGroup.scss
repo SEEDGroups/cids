@@ -7,6 +7,7 @@ nav#fh5co-main-menu ul li {
 
 div#carousel-example-generic .carousel-inner .item img {
   width: 100%; }
+
 div#fh5co-main .fh5co-narrow-content {
   text-decoration: none;
   color: #555555; }
@@ -29,8 +30,13 @@ div#fh5co-main .fh5co-narrow-content {
         padding: 5%;
         border: 1px solid red;
         background-color: red; }
-  div#fh5co-main .fh5co-narrow-content h2.fh5co-heading, div#fh5co-main .fh5co-narrow-content div.fh5co-icon i {
+  div#fh5co-main .fh5co-narrow-content h2.fh5co-heading {
     text-align: center; }
+  div#fh5co-main .fh5co-narrow-content div.fh5co-icon i {
+    text-align: center; }
+  div#fh5co-main .fh5co-narrow-content h2.seedevent {
+    text-align: left;
+    font-size: 1em; }
 div#fh5co-main div.row .Youtube_style .fh5co-narrow-content left a {
   text-decoration: inherit;
   cursor: pointer;
@@ -50,7 +56,9 @@ div#fh5co-main div.row .right_style {
         text-decoration: none; }
 div#fh5co-main table thead th {
   text-align: center; }
-div#fh5co-main table tbody td.Serial, div#fh5co-main table tbody td.download {
+div#fh5co-main table tbody td.Serial {
+  text-align: center; }
+div#fh5co-main table tbody td.download {
   text-align: center; }
 
 #testimonial4 {
@@ -244,6 +252,5 @@ div#fh5co-main table tbody td.Serial, div#fh5co-main table tbody td.download {
     box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 5px 5px #ffffff, 0 0 0 5px rgba(255, 255, 255, 0.5);
     transform: scale(1.5);
     opacity: 0; } }
-/*# sourceMappingURL=seedsGroup.css.map */
 
-/*# sourceMappingURL=seedsGroup.css.map */
+/*# sourceMappingURL=seedsGroup.scss.map */

@@ -1,9 +1,7 @@
 <div id="fh5co-main">
-
-  <div id="map"></div>
-
   <div class="fh5co-more-contact">
     <div class="fh5co-narrow-content">
+      <div id="map" class="animate-box" data-animate-effect="fadeInLeft"></div>
       <div class="row">
         <div class="col-md-4">
           <div class="fh5co-feature fh5co-feature-sm animate-box" data-animate-effect="fadeInLeft">

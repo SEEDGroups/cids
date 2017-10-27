@@ -24,4 +24,8 @@ $(document).ready(function(){
 $(document).ready(function(){
 	$('#listTimeline').dataTable();
 });
+
+$(document).ready(function(){
+	$('#notices').dataTable();
+});
 </script>
