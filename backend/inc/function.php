@@ -46,7 +46,7 @@
 			}return $data;
 		}
 	}
-    
+
 	function getAllUserlist(){
 		global $conn;
 		$sql = "SELECT * from user_signup";
@@ -143,7 +143,7 @@ function getContribution (){
 			}return $data;
 		}
 	}
-	
+
 	function getResearch(){
 		global $conn;
 		$sql = "SELECT * FROM about_org WHERE id=10";
@@ -175,7 +175,6 @@ function getContribution (){
 	function getEvents(){
 		global $conn;
 		$sql = "SELECT achievement.*, event_image.image_title from achievement LEFT JOIN event_image on achievement.id = event_image.event_id WHERE achievement.event_type=1 ORDER BY achievement.id desc";
-	//	debugger($sql); exit;
 		$query = mysqli_query($conn, $sql);
 		if(mysqli_num_rows($query) <= 0){
 			return 0;
@@ -262,7 +261,7 @@ function getContribution (){
         global $conn;
 
         $sql= "DELETE FROM ".$tablename." WHERE ".$field." = ".$value."";
-      
+
         $query = mysqli_query($conn, $sql);
         if($query){
             return true;
@@ -368,7 +367,7 @@ function getContribution (){
 			return $data;
 		}
 	}
-	
+
 	function getAllBannerImages(){
 		global $conn;
 		$sql = "SELECT * FROM banner_image";

@@ -68,7 +68,7 @@
 		}else{
 			$data = array();
 			while($rows = mysqli_fetch_assoc($query)){
-				$data = $rows; //for single value
+				$data[] = $rows; //for double value <-this one is correct and should be used
 			}return $data;
 		}
 	}

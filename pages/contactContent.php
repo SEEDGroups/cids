@@ -1,3 +1,4 @@
+<?php $contact = getContactInfo();?>
 <div id="fh5co-main">
   <div class="fh5co-more-contact">
     <div class="fh5co-narrow-content">
