@@ -1,3 +1,4 @@
+$headingColor: #da1212;
 nav#fh5co-main-menu ul li {
   cursor: pointer;
   a {
@@ -42,6 +43,9 @@ div {
             }
           }
         }
+      }
+      h2.fh5co-heading{
+        color: $headingColor;
       }
       h2.fh5co-heading, div.fh5co-icon i {
         text-align: center;
