@@ -1,0 +1,25 @@
+nav#fh5co-main-menu ul li {
+  cursor: pointer; }
+  nav#fh5co-main-menu ul li a {
+    text-decoration: none; }
+    nav#fh5co-main-menu ul li a i {
+      margin-right: 3%; }
+
+div#carousel-example-generic .carousel-inner .item img {
+  width: 100%; }
+
+div#fh5co-main .fh5co-narrow-content {
+  text-decoration: none;
+  cursor: pointer;
+  color: #555555; }
+  div#fh5co-main .fh5co-narrow-content left a {
+    text-decoration: inherit;
+    cursor: inherit;
+    color: red; }
+    div#fh5co-main .fh5co-narrow-content left a i {
+      color: red; }
+  div#fh5co-main .fh5co-narrow-content .row iframe {
+    width: 75%;
+    height: 500px; }
+
+/*# sourceMappingURL=seedsGroup.css.map */

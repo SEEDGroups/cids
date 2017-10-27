@@ -1,0 +1,53 @@
+$carouselWidth: 100%;
+$navIconsMargin: 3%;
+$galleryColor: #555555;
+$iframeWidth: 75%;
+$iframeHeight: 500px;
+$activeColor: red;
+nav#fh5co-main-menu{
+  ul{
+    li{
+      cursor: pointer;
+      a{
+        text-decoration: none;
+        i{
+          margin-right: $navIconsMargin;
+        }
+      }
+    }
+  }
+}
+
+div#carousel-example-generic{
+    .carousel-inner{
+      .item{
+        img{
+          width: $carouselWidth;
+        }
+      }
+    }
+}
+
+div#fh5co-main{
+  .fh5co-narrow-content{
+    text-decoration: none;
+    cursor: pointer;
+    color: $galleryColor;
+    left{
+        a{
+          text-decoration: inherit;
+          cursor: inherit;
+          color: $activeColor;
+             i{
+                color: $activeColor;
+              }
+          }
+      }
+    .row{
+      iframe{
+        width:$iframeWidth;
+        height: $iframeHeight;
+      }
+    }
+  }
+}
