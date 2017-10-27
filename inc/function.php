@@ -18,7 +18,6 @@
 			$string = trim($string);
 		return $string;
 	}
-
 	function getLink(){
 		global $conn;
 		$sql = "SELECT * from youtube Where id != '' ORDER BY id desc ";
@@ -32,9 +31,37 @@
 			}return $data;
 		}
 	}
-	function getVideo($id){
+	 function getVideo($id){
+	 	global $conn;
+	 	$sql = "SELECT * from youtube WHERE id = '$id'";
+		$query = mysqli_query($conn, $sql);
+		if(mysqli_num_rows($query) <=0){
+			return 0;
+		}else{
+			$data = array();
+			while($rows = mysqli_fetch_assoc($query)){
+				$data= $rows;
+			}return $data;
+		}
+	}
+	function getContactInfo(){
 		global $conn;
-		$sql = "SELECT * from youtube WHERE id = '$id'";
+		$sql = "SELECT * from contact";
+		$query = mysqli_query($conn, $sql);
+		if(mysqli_num_rows($query) <=0){
+			return 0;
+		}else{
+			$data[]=array();
+			while($rows = mysqli_fetch_assoc($query)){
+				$data= $rows;
+			}return $data;
+		}
+	}
+
+
+	function getRelatedVideos($id){
+		global $conn;
+		$sql = "SELECT * from youtube WHERE id != '$id' and id != ''";
 		$query = mysqli_query($conn, $sql);
 		if(mysqli_num_rows($query) <= 0){
 			return 0;
@@ -46,17 +73,5 @@
 		}
 	}
 
-	function getRelatedVideos($id){
-		global $conn;
-		$sql = "SELECT * from youtube WHERE id != '$id' and id != ''";
-		$query = mysqli_query($conn, $sql);
-		if(mysqli_num_rows($query) <= 0){
-			return 0;
-		}else{
-			$data = array();
-			while($rows = mysqli_fetch_assoc($query)){
-				$data[] = $rows; //for single value
-			}return $data;
-		}
-	}
+
 	?>

@@ -6,8 +6,8 @@
 	if(isset($_POST) && !empty($_POST)){
 		$email = sanitize($_POST['email']);
 		$phone = sanitize($_POST['phone']);
-		$address =($_POST['address']);
-		
+		$address = sanitize($_POST['address']);
+
 
 
 		$sql = "UPDATE contact SET email = '$email',  address = '$address',phone='$phone'";
@@ -18,7 +18,7 @@
 
 		if($query){
 			$_SESSION['success'] = "Contact Info has been Updated successfully.";
-			
+
 			@header('location: ../contact.php');
 			exit;
 		}else{

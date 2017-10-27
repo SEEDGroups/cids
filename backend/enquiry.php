@@ -19,7 +19,7 @@ include 'security_inside.php';?>
                 $_SESSION['success'] = "Enquiry has been removed successfully";
                 ?>
                 <script type="text/javascript">
-                    window.location.href = "http://nitro/backend/enquiry.php";
+                    window.location.href = "enquiry.php";
                 </script>
                 <?php
             exit;
@@ -27,7 +27,7 @@ include 'security_inside.php';?>
                 $_SESSION['error'] = "Enquiry couldn't be removed at this moment. Please try again later.";
                 ?>
                 <script type="text/javascript">
-                    window.location.href = "nitro/backend/enquiry.php";
+                    window.location.href = "enquiry.php";
                 </script>
                 <?php
             exit;

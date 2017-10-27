@@ -9,7 +9,7 @@
               <i class="icon-envelope-o"></i>
             </div>
             <div class="fh5co-text">
-              <p><a href="#">info@domain.com</a></p>
+              <p><a href="#"><?php echo $contact['email']; ?></a></p>
             </div>
           </div>
         </div>
@@ -19,7 +19,7 @@
               <i class="icon-map-o"></i>
             </div>
             <div class="fh5co-text">
-              <p>198 West 21th Street, Suite 721 New York NY 10016</p>
+              <p><a href="#"><?php echo $contact['address']; ?></a></p>
             </div>
           </div>
         </div>
@@ -29,7 +29,7 @@
               <i class="icon-phone"></i>
             </div>
             <div class="fh5co-text">
-              <p><a href="tel://">+123 456 7890</a></p>
+              <p><a href="tel://"><?php echo $contact['phone']; ?></a></p>
             </div>
           </div>
         </div>
@@ -43,24 +43,25 @@
         <h1>Get In Touch</h1>
       </div>
     </div>
-    <form action="">
+    <form action="inc/enquiry_process.php" method="post">
       <div class="row">
         <div class="col-md-12">
           <div class="row">
             <div class="col-md-6">
+
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Name">
+                <input type="text" name="name" id="name" class="form-control" placeholder="Name">
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Email">
+                <input type="email" name="email" id="email" class="form-control" placeholder="Email">
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Phone">
+                <input type="text" name="phone" id="phone"  class="form-control" placeholder="Phone">
               </div>
             </div>
             <div class="col-md-6">
               <div class="form-group">
-                <textarea name="" id="message" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+                <textarea name="message" id="message" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
               </div>
               <div class="form-group">
                 <input type="submit" class="btn btn-primary btn-md" value="Send Message">

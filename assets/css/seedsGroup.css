@@ -7,6 +7,7 @@ nav#fh5co-main-menu ul li {
 
 div#carousel-example-generic .carousel-inner .item img {
   width: 100%; }
+<<<<<<< HEAD
 div#fh5co-main .fh5co-narrow-content {
   text-decoration: none;
   color: #555555; }
@@ -245,5 +246,21 @@ div#fh5co-main table tbody td.Serial, div#fh5co-main table tbody td.download {
     transform: scale(1.5);
     opacity: 0; } }
 /*# sourceMappingURL=seedsGroup.css.map */
+=======
+
+div#fh5co-main .fh5co-narrow-content {
+  text-decoration: none;
+  cursor: pointer;
+  color: #555555; }
+  div#fh5co-main .fh5co-narrow-content left a {
+    text-decoration: inherit;
+    cursor: inherit;
+    color: red; }
+    div#fh5co-main .fh5co-narrow-content left a i {
+      color: red; }
+  div#fh5co-main .fh5co-narrow-content .row iframe {
+    width: 75%;
+    height: 500px; }
+>>>>>>> 90be2951be149774a5f720bfd379c436f648e78c
 
 /*# sourceMappingURL=seedsGroup.css.map */
