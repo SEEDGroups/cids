@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon/icomoon.eot?srf3rx");
+  src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"), url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"), url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 nav#fh5co-main-menu ul li {
   cursor: pointer; }
   nav#fh5co-main-menu ul li a {
@@ -7,7 +13,6 @@ nav#fh5co-main-menu ul li {
 
 div#carousel-example-generic .carousel-inner .item img {
   width: 100%; }
-<<<<<<< HEAD
 div#fh5co-main .fh5co-narrow-content {
   text-decoration: none;
   color: #555555; }
@@ -30,6 +35,8 @@ div#fh5co-main .fh5co-narrow-content {
         padding: 5%;
         border: 1px solid red;
         background-color: red; }
+  div#fh5co-main .fh5co-narrow-content h2.fh5co-heading {
+    color: #da1212; }
   div#fh5co-main .fh5co-narrow-content h2.fh5co-heading, div#fh5co-main .fh5co-narrow-content div.fh5co-icon i {
     text-align: center; }
 div#fh5co-main div.row .Youtube_style .fh5co-narrow-content left a {
@@ -53,6 +60,37 @@ div#fh5co-main table thead th {
   text-align: center; }
 div#fh5co-main table tbody td.Serial, div#fh5co-main table tbody td.download {
   text-align: center; }
+div .fh5co-whatwedo {
+  background: #eeeeee; }
+  div .fh5co-whatwedo .item {
+    color: white;
+    padding-left: 3em;
+    padding-right: 3em; }
+    @media screen and (max-width: 768px) {
+      div .fh5co-whatwedo .item {
+        padding-left: 0em;
+        padding-right: 0em; } }
+    div .fh5co-whatwedo .item figure {
+      text-align: center; }
+      div .fh5co-whatwedo .item figure img {
+        max-width: inherit;
+        width: 90px;
+        margin: 0 auto;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        border-radius: 50%; }
+    div .fh5co-whatwedo .item p {
+      font-size: 30px; }
+      @media screen and (max-width: 768px) {
+        div .fh5co-whatwedo .item p {
+          font-size: 28px; } }
+      @media screen and (max-width: 480px) {
+        div .fh5co-whatwedo .item p {
+          font-size: 20px; } }
+    div .fh5co-whatwedo .item .author {
+      font-size: 16px;
+      display: block; }
 
 #testimonial4 {
   overflow: hidden;
@@ -178,8 +216,7 @@ div#fh5co-main table tbody td.Serial, div#fh5co-main table tbody td.download {
     top: 0;
     left: 0;
     right: 0;
-    width: 50px;
-    height: 50px;
+    width: 50%;
     margin: auto;
     display: block;
     color: #f2f2f2;
@@ -246,21 +283,5 @@ div#fh5co-main table tbody td.Serial, div#fh5co-main table tbody td.download {
     transform: scale(1.5);
     opacity: 0; } }
 /*# sourceMappingURL=seedsGroup.css.map */
-=======
-
-div#fh5co-main .fh5co-narrow-content {
-  text-decoration: none;
-  cursor: pointer;
-  color: #555555; }
-  div#fh5co-main .fh5co-narrow-content left a {
-    text-decoration: inherit;
-    cursor: inherit;
-    color: red; }
-    div#fh5co-main .fh5co-narrow-content left a i {
-      color: red; }
-  div#fh5co-main .fh5co-narrow-content .row iframe {
-    width: 75%;
-    height: 500px; }
->>>>>>> 90be2951be149774a5f720bfd379c436f648e78c
 
 /*# sourceMappingURL=seedsGroup.css.map */
