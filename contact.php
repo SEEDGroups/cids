@@ -11,4 +11,4 @@
 	<script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCiOWgrwaFx4U1e6Sq7C1Uxw4k4IHZXNL0&callback=initMap">
     </script>
-		<script src="google_map_2.js" charset="utf-8"></script>
+		<script src="<?php echo js_url; ?>/google_map.js" charset="utf-8"></script>

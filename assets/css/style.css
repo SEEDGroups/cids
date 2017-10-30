@@ -45,7 +45,9 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   margin: 0 0 30px 0;
 }
-
+h2.imageColor{
+  color: white !important;
+}
 figure {
   margin-bottom: 2.5em;
   float: left;
@@ -175,6 +177,16 @@ figure {
 }
 #fh5co-aside #fh5co-main-menu ul li.fh5co-active a {
   color: black;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+    color: red !important;
+}
+#fh5co-aside #fh5co-main-menu ul li:hover{
+  background-color: #EEEEEE !important;
+}
+.nav-tabs > li > a{
+  color: #555555 !important;
 }
 #fh5co-aside #fh5co-main-menu ul li.fh5co-active a:after {
   visibility: hidden;

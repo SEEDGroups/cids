@@ -1,4 +1,4 @@
-<?php include "inc/config.php";?>
+<?php include "inc/config.php"; include "inc/dbconnect.php"; include "inc/function.php";?>
 <!DOCTYPE html>
 <html class="no-js">
 	<meta charset="utf-8">
@@ -37,11 +37,13 @@
 	<link rel="stylesheet" href="<?php echo css_url;?>/owl.theme.default.min.css">
 	<!-- Theme style  -->
 	<link rel="stylesheet" href="<?php echo css_url;?>/style.css">
-
+	<link rel="stylesheet" href="<?php echo css_url; ?>/seedsGroup.css">
 	<!-- Fontawesome -->
 	<link rel="stylesheet" href="<?php echo fontawesome_url; ?>/css/font-awesome.min.css">
 	<!-- Modernizr JS -->
 	<script src="<?php echo js_url;?>/modernizr-2.6.2.min.js"></script>
+	<!-- jQuery -->
+	<script src="<?php echo js_url;?>/jquery.min.js"></script>
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
 	<script src="<?php echo js_url;?>/respond.min.js"></script>
