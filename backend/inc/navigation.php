@@ -20,7 +20,7 @@
                     <ul class="dropdown-menu">
 
                         <li>
-                            <a href="logout.php"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                            <a href="logout"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
                         </li>
                     </ul>
                 </li>
@@ -28,37 +28,37 @@
             <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav">
-                    <li class="<?php echo ($current_page_active == "dashboard.php") ? 'active' : ''; ?>">
-                        <a href="dashboard.php" title="Dashboard"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
+                    <li class="<?php echo ($current_page_active == "dashboard") ? 'active' : ''; ?>">
+                        <a href="dashboard" title="Dashboard"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
                     </li>
-                    <li class="<?php echo ($current_page_active == "introduction.php") ? 'active' : ''; ?>">
-                      <a href="introduction.php" title="Introduction of HUB4GROWTH"><i class="fa fa-fw fa-bank"></i> Introduction</a>
-                    </li>
-
-                            <li class="<?php echo ($current_page_active == "about_vision.php" || $current_page_active == "about_collaboration.php" || $current_page_active == "about_contribution.php" || $current_page_active == "about_research.php") ? 'active' : ''; ?>">
-                            <a href="about_vision.php" title="About Hub4Growth"><i class="fa fa-fw fa-header"></i> About CIDS</a>
-
-                    </li>
-                            <li class="<?php echo ($current_page_active == "list_position.php") ? 'active' : ''; ?>">
-                                <a href="list_position.php" title="Member's lists"><i class="fa fa-fw fa-users"></i> List Members</a>
+                    <li class="<?php echo ($current_page_active == "introduction") ? 'active' : ''; ?>">
+                      <a href="introduction" title="Introduction of CIDS"><i class="fa fa-fw fa-bank"></i> Introduction</a>
                     </li>
 
-                    <li class="<?php echo ($current_page_active == "contact.php") ? 'active' : ''; ?>">
-                            <a href="contact.php" title="Contact Info"><i class="fa fa-fw fa-phone"></i> Contact Info</a>
+                            <li class="<?php echo ($current_page_active == "about_vision" || $current_page_active == "about_collaboration" || $current_page_active == "about_contribution" || $current_page_active == "about_research") ? 'active' : ''; ?>">
+                            <a href="about_vision" title="About CIDS"><i class="fa fa-fw fa-header"></i> About CIDS</a>
+
+                    </li>
+                            <li class="<?php echo ($current_page_active == "list_position") ? 'active' : ''; ?>">
+                                <a href="list_position" title="Member's lists"><i class="fa fa-fw fa-users"></i> List Members</a>
                     </li>
 
-                    <li class="<?php echo ($current_page_active == "events.php" || $current_page_active == "list_events.php") ? 'active' : ''; ?>">
-                            <a href="list_events.php"><i class="fa fa-fw fa-calendar"></i> Events</a>
+                    <li class="<?php echo ($current_page_active == "contact") ? 'active' : ''; ?>">
+                            <a href="contact" title="Contact Info"><i class="fa fa-fw fa-phone"></i> Contact Info</a>
                     </li>
 
-                    <li class="<?php echo ($current_page_active == "banner_list.php" || $current_page_active == "add_banner.php") ? 'active' : ''; ?>">
-                            <a href="banner_list.php"><i class="fa fa-fw fa-picture-o"></i> Banners</a>
+                    <li class="<?php echo ($current_page_active == "events" || $current_page_active == "list_events") ? 'active' : ''; ?>">
+                            <a href="list_events"><i class="fa fa-fw fa-calendar"></i> Events</a>
                     </li>
-                    <li class="<?php echo ($current_page_active == "videoAdd.php") ? 'active' : ''; ?>">
-                            <a href="videoAdd.php"><i class="fa fa-fw fa-server"></i>Add video</a>
+
+                    <li class="<?php echo ($current_page_active == "banner_list" || $current_page_active == "add_banner") ? 'active' : ''; ?>">
+                            <a href="banner_list"><i class="fa fa-fw fa-picture-o"></i> Banners</a>
                     </li>
-                    <li class="<?php echo ($current_page_active == "enquiry.php") ? 'active' : ''; ?>">
-                            <a href="enquiry.php"><i class="fa fa-fw fa-server"></i> List Enquries</a>
+                    <li class="<?php echo ($current_page_active == "videoAdd") ? 'active' : ''; ?>">
+                            <a href="videoAdd"><i class="fa fa-fw fa-server"></i>Add video</a>
+                    </li>
+                    <li class="<?php echo ($current_page_active == "enquiry") ? 'active' : ''; ?>">
+                            <a href="enquiry"><i class="fa fa-fw fa-server"></i> List Enquries</a>
                     </li>
 
 
