@@ -1,3 +1,4 @@
+<?php $current_page = basename($_SERVER['REQUEST_URI']);?>
 <!-- Left side column. contains the logo and sidebar -->
 <aside class="main-sidebar">
 
@@ -72,7 +73,7 @@
       </li>
       <li><a href="gallery"><i class="fa fa-picture-o"></i> <span>Gallery</span></a></li>
       <li><a href="#"><i class="fa fa-youtube"></i> <span>Youtube Video</span></a></li>
-      <li><a href="#"><i class="fa fa-phone"></i> <span>Contact Info</span></a></li>
+      <li><a href="contact_info"><i class="fa fa-phone"></i> <span>Contact Info</span></a></li>
       <li><a href="#"><i class="fa fa-comment-o"></i> <span>Enquiry</span></a></li>
 
     </ul>

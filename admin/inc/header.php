@@ -1,3 +1,4 @@
+<?php session_start(); require 'inc/config.php'; include ADMIN_SITEMAP."class/database.php"; include ADMIN_SITEMAP."inc/function.php"; include ADMIN_SITEMAP."inc/security_inside.php";?>
 <!DOCTYPE html>
 <!--
 This is a starter template page. Use this page to start your new project from

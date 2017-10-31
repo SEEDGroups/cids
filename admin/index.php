@@ -1,3 +1,4 @@
+<?php session_start(); include 'inc/login_security.php';?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -31,6 +32,7 @@
   </style>
 </head>
 <body class="hold-transition lockscreen">
+  <?php include "inc/notification.php"; ?>
 <!-- Automatic element centering -->
 <div class="lockscreen-wrapper">
   <div class="lockscreen-logo">
@@ -48,10 +50,10 @@
     <!-- /.lockscreen-image -->
 
     <!-- lockscreen credentials (contains the form) -->
-    <form class="lockscreen-credentials">
+    <form class="lockscreen-credentials" method="post" action="controller/login">
       <div class="input-group">
-        <input type="password" class="form-control" placeholder="password" autocomplete="off">
-
+        <input type="password" name="password" type="password" class="form-control" placeholder="password" autocomplete="off">
+        <input type="hidden" name="username" type="text" value="admin" class="form-control" placeholder="password" autocomplete="off">
         <div class="input-group-btn">
           <button type="button" class="btn"><i class="fa fa-arrow-right text-muted"></i></button>
         </div>

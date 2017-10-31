@@ -20,10 +20,7 @@ if(isset($_POST) && !empty($_POST)){
 				$_SESSION['role'] = $users['role_id'];
 				$_SESSION['is_logged_in'] = "user has logged in";
 				$_SESSION['success'] = "Welcome, ".$_SESSION['username']."!";
-
-					if(isset($_POST['remember']) && !empty($_POST['remember'])){
-						setcookie('is_logged_in', 1, time()+259200);
-					} 															//cookies ended here
+				setcookie('is_logged_in', 1, time()+259200); 															//cookies ended here
 					header('location: dashboard.php');
 					exit;
 	 			} 																// password ended here
